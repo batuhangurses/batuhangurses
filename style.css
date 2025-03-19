@@ -52,6 +52,38 @@ section h2 {
     color: #ff6347; /* Kırmızı başlık rengi */
 }
 
+/* Homework kısmı */
+#homework {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#homework h2 {
+    color: #6a4c9c; /* Mor başlık rengi */
+}
+
+#homework ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#homework ul li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+#homework ul li a {
+    color: #6a4c9c;
+    text-decoration: none;
+}
+
+#homework ul li a:hover {
+    color: #ff6347; /* Kırmızıya yakın renk */
+}
+
 footer {
     background-color: #333;
     color: white;

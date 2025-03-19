@@ -1,14 +1,14 @@
-/* Temel stilde düzenlemeler */
+/* Temel stil */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9;
+    background-color: #dcd8e3; /* Gri-mor arka plan */
     color: #333;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #2a9df4;
+    background-color: #6a4c9c; /* Mor başlık arka planı */
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -36,7 +36,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    color: #ff6347; /* Kırmızıya yakın bir renk */
 }
 
 /* Hakkımda ve İletişim bölümleri */
@@ -49,7 +49,7 @@ section {
 }
 
 section h2 {
-    color: #1e90ff;
+    color: #ff6347; /* Kırmızı başlık rengi */
 }
 
 footer {

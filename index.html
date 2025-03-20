@@ -4,11 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Batuhan Gürses</title>
+    <!-- style.css dosyasını bağlıyoruz -->
     <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts'tan profesyonel bir font ekleyebilirsin -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Header Bölümü: Fotoğraf ve Başlık -->
     <header>
-        <h1>Batuhan Gürses</h1>
+        <div class="header-container">
+            <!-- Buraya profil fotoğrafını ekle: dosya adı profile.jpg, istersen farklı isim verebilirsin ama style.css'te uyarlaman gerek -->
+            <img src="batuhan.jpg" alt="Batuhan Gürses" class="profile-img">
+            <h1>Batuhan Gürses</h1>
+            <p class="subtitle">Öğrenci</p>
+        </div>
+        <!-- Navigasyon Menüsü -->
         <nav>
             <ul>
                 <li><a href="#about">Hakkımda</a></li>
@@ -18,11 +28,13 @@
         </nav>
     </header>
     
+    <!-- Hakkımda Bölümü -->
     <section id="about">
         <h2>Hakkımda</h2>
-        <p>Merhaba, ben Batuhan Gürses, Hacettepe Üniversitesi Elektrik Elektronik Mühendisliği bölümü 1. sınıf öğrencisiyim.</p>
+        <p>Merhaba, ben Batuhan Gürses. Hacettepe Üniversitesi Elektrik Elektronik Mühendisliği bölümü 1. sınıf öğrencisiyim.</p>
     </section>
 
+    <!-- Homework Bölümü -->
     <section id="homework">
         <h2>Homework 1</h2>
         <ul>
@@ -33,11 +45,13 @@
         </ul>
     </section>
     
+    <!-- İletişim Bölümü -->
     <section id="contact">
         <h2>İletişim</h2>
         <p>Email: <a href="mailto:bthngrss52@gmail.com">bthngrss52@gmail.com</a></p>
     </section>
     
+    <!-- Footer -->
     <footer>
         <p>&copy; 2025 Batuhan Gürses. Tüm hakları saklıdır.</p>
     </footer>

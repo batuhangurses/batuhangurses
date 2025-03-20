@@ -1,107 +1,92 @@
-/* Genel stil ayarları */
+/* Genel Sayfa Stili */
 body {
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f5f5f5;
-  color: #333;
-  line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
 }
 
-/* Dil Toggle Butonu */
-#langToggle {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  background-color: #004466;
-  color: #fff;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 5px;
-  cursor: pointer;
-  z-index: 1000;
-}
-#langToggle:hover {
-  background-color: #00334d;
-}
-
-/* Header stili */
+/* Header Bölümü */
 header {
-  background-color: #004466;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
+    background-color: #0d3b66;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    position: relative;
 }
 
-/* Header kapsayıcı: Profil fotoğrafı ve başlık */
-.header-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.profile-img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  border: 3px solid #fff;
-  margin-bottom: 10px;
+/* Header başlık kısmı küçültüldü */
+.header-container h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
 }
 
-/* Navigasyon menüsü */
+/* Navigasyon Menüsü */
 nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 10px 0 0 0;
-  display: flex;
-  justify-content: center;
+    list-style-type: none;
+    padding: 0;
 }
+
 nav ul li {
-  margin: 0 15px;
+    display: inline;
+    margin: 0 15px;
 }
+
 nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
-  transition: color 0.3s ease;
-}
-nav ul li a:hover {
-  color: #ffcc00;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
 }
 
-/* Bölüm (section) stili */
+/* Dil Değiştirme Butonu */
+.language-switch {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background: #ffffff;
+    color: #0d3b66;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.language-switch:hover {
+    background: #f1f1f1;
+}
+
+/* Hakkımda Bölümü */
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 30px;
+}
+
+#about img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+/* İçerik Kartları */
 section {
-  background-color: #fff;
-  margin: 20px auto;
-  padding: 20px;
-  max-width: 800px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-section h2 {
-  border-bottom: 2px solid #004466;
-  padding-bottom: 10px;
-  margin-bottom: 15px;
-}
-
-/* About bölümünde fotoğraf ve metni yan yana getirmek */
-.about-container {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-.about-img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  border: 2px solid #004466;
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer */
 footer {
-  background-color: #004466;
-  color: #fff;
-  text-align: center;
-  padding: 15px 0;
-  margin-top: 20px;
+    text-align: center;
+    padding: 15px;
+    background-color: #0d3b66;
+    color: white;
+    margin-top: 20px;
 }

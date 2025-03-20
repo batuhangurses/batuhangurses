@@ -1,120 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Batuhan Gürses</title>
-  <!-- style.css dosyasını bağlıyoruz -->
-  <link rel="stylesheet" href="style.css">
-  <!-- Google Fonts: Roboto -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batuhan Gurses</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Dil Değiştirme Butonu -->
-  <button id="langToggle" onclick="toggleLanguage()">Türkçe'ye Geç</button>
-  
-  <!-- Header Bölümü: Fotoğraf, Başlık ve Navigasyon -->
-  <header>
-    <div class="header-container">
-      <!-- Ana sayfada büyük profil fotoğrafı -->
-      <img src="batuhan.jpg" alt="Batuhan Gürses" class="profile-img">
-      <h1>Batuhan Gürses</h1>
-      <p class="subtitle">Student</p>
-    </div>
-    <!-- Navigasyon Menüsü -->
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#homework">Homework 1</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- İçerik Bölümleri: İngilizce (Varsayılan) ve Türkçe (Gizli) -->
-  <div id="english" class="language-content">
-    <!-- About Bölümü: Profil fotoğrafı küçük versiyonla sol tarafta -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#homework">Homework 1</a></li>
+                <li><button id="lang-toggle">TR</button></li>
+            </ul>
+        </nav>
+    </header>
+    
     <section id="about">
-      <h2>About</h2>
-      <div class="about-container">
-        <!-- Küçültülmüş profil fotoğrafı -->
-        <img src="batuhan.jpg" alt="Batuhan Gürses" class="about-img">
-        <p>Hello, I'm Batuhan Gürses. I am a first-year student in the Electrical & Electronics Engineering department at Hacettepe University.</p>
-      </div>
+        <img src="batuhan.jpg" alt="Batuhan Gurses" class="profile-img">
+        <div class="about-text">
+            <h2>About</h2>
+            <p>Hello, I'm Batuhan Gurses. I am a first-year student in the Electrical and Electronics Engineering department at Hacettepe University.</p>
+        </div>
     </section>
 
-    <!-- Homework Bölümü -->
     <section id="homework">
-      <h2>Homework 1</h2>
-      <ul>
-        <li>Q2: <a href="https://github.com/batuhangurses/university/blob/main/HW1-Q2.c" target="_blank">HW1-Q2.c</a></li>
-        <li>Q3: <a href="https://github.com/batuhangurses/university/blob/main/HW1-Q3.c" target="_blank">HW1-Q3.c</a></li>
-        <li>Q4-a: <a href="https://github.com/batuhangurses/university/blob/main/HW1-Q4-a.c" target="_blank">HW1-Q4-a.c</a></li>
-        <li>Q4-b: <a href="https://github.com/batuhangurses/university/blob/main/HW1-Q4-b.c" target="_blank">HW1-Q4-b.c</a></li>
-      </ul>
+        <h2>Homework 1</h2>
+        <ul>
+            <li>Q2: <a href="https://github.com/batuhangurses/university/blob/main/HW1-Q2.c">Q2 Solution</a></li>
+            <li>Q3: <a href="https://github.com/batuhangurses/university/blob/main/HW1-Q3.c">Q3 Solution</a></li>
+            <li>Q4-a: <a href="https://github.com/batuhangurses/university/blob/main/HW1-Q4-a.c">Q4-a Solution</a></li>
+            <li>Q4-b: <a href="https://github.com/batuhangurses/university/blob/main/HW1-Q4-b.c">Q4-b Solution</a></li>
+        </ul>
     </section>
-
-    <!-- Contact Bölümü -->
+    
     <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:bthngrss52@gmail.com">bthngrss52@gmail.com</a></p>
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:bthngrss52@gmail.com">bthngrss52@gmail.com</a></p>
     </section>
-  </div>
+    
+    <footer>
+        <p>&copy; 2025 Batuhan Gurses. All rights reserved.</p>
+    </footer>
 
-  <!-- Türkçe içerik; başlangıçta gizli -->
-  <div id="turkish" class="language-content" style="display: none;">
-    <!-- Hakkımda Bölümü -->
-    <section id="about">
-      <h2>Hakkımda</h2>
-      <div class="about-container">
-        <!-- Küçültülmüş profil fotoğrafı -->
-        <img src="batuhan.jpg" alt="Batuhan Gürses" class="about-img">
-        <p>Merhaba, ben Batuhan Gürses. Hacettepe Üniversitesi Elektrik Elektronik Mühendisliği bölümü 1. sınıf öğrencisiyim.</p>
-      </div>
-    </section>
-
-    <!-- Homework Bölümü -->
-    <section id="homework">
-      <h2>Homework 1</h2>
-      <ul>
-        <li>Q2: <a href="https://github.com/batuhangurses/university/blob/main/HW1-Q2.c" target="_blank">HW1-Q2.c</a></li>
-        <li>Q3: <a href="https://github.com/batuhangurses/university/blob/main/HW1-Q3.c" target="_blank">HW1-Q3.c</a></li>
-        <li>Q4-a: <a href="https://github.com/batuhangurses/university/blob/main/HW1-Q4-a.c" target="_blank">HW1-Q4-a.c</a></li>
-        <li>Q4-b: <a href="https://github.com/batuhangurses/university/blob/main/HW1-Q4-b.c" target="_blank">HW1-Q4-b.c</a></li>
-      </ul>
-    </section>
-
-    <!-- İletişim Bölümü -->
-    <section id="contact">
-      <h2>İletişim</h2>
-      <p>Email: <a href="mailto:bthngrss52@gmail.com">bthngrss52@gmail.com</a></p>
-    </section>
-  </div>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Batuhan Gürses. All rights reserved.</p>
-  </footer>
-
-  <!-- JavaScript: Dil değiştirme fonksiyonu -->
-  <script>
-    function toggleLanguage() {
-      const enContent = document.getElementById('english');
-      const trContent = document.getElementById('turkish');
-      const toggleBtn = document.getElementById('langToggle');
-      
-      if (enContent.style.display === "none") {
-        // Eğer Türkçe görünüyorsa, İngilizceye geç
-        enContent.style.display = "block";
-        trContent.style.display = "none";
-        toggleBtn.textContent = "Türkçe'ye Geç";
-      } else {
-        // Eğer İngilizce görünüyorsa, Türkçe'ye geç
-        enContent.style.display = "none";
-        trContent.style.display = "block";
-        toggleBtn.textContent = "Switch to English";
-      }
-    }
-  </script>
+    <script>
+        document.getElementById('lang-toggle').addEventListener('click', function() {
+            if (document.documentElement.lang === 'en') {
+                document.documentElement.lang = 'tr';
+                this.textContent = 'EN';
+                document.getElementById('about').querySelector('h2').textContent = 'Hakkımda';
+                document.getElementById('about').querySelector('p').textContent = 'Merhaba, ben Batuhan Gürses. Hacettepe Üniversitesi Elektrik Elektronik Mühendisliği bölümü 1. sınıf öğrencisiyim.';
+                document.getElementById('homework').querySelector('h2').textContent = 'Ödev 1';
+                document.getElementById('contact').querySelector('h2').textContent = 'İletişim';
+                document.getElementById('contact').querySelector('p').textContent = 'Email: bthngrss52@gmail.com';
+            } else {
+                document.documentElement.lang = 'en';
+                this.textContent = 'TR';
+                document.getElementById('about').querySelector('h2').textContent = 'About';
+                document.getElementById('about').querySelector('p').textContent = "Hello, I'm Batuhan Gurses. I am a first-year student in the Electrical and Electronics Engineering department at Hacettepe University.";
+                document.getElementById('homework').querySelector('h2').textContent = 'Homework 1';
+                document.getElementById('contact').querySelector('h2').textContent = 'Contact';
+                document.getElementById('contact').querySelector('p').textContent = 'Email: bthngrss52@gmail.com';
+            }
+        });
+    </script>
 </body>
 </html>
